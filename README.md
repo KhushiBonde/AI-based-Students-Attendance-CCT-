@@ -8,7 +8,7 @@
 
 ---
 
-👤 Profile
+Profile
 
 ```
 Author(s): [khushi Bonde]
@@ -18,7 +18,7 @@ Affiliation: [Suryodaya College Of Engineering And Technology]
 
 ---
 
- 📄 Abstract
+  Abstract
 
 This project presents an AI-powered Student Attendance Detection System using CCTV (CCT) camera feeds and facial recognition technology. The system captures live video from a classroom camera, detects and recognizes student faces in real time, and automatically marks their attendance in a CSV/Excel file with timestamp. It leverages OpenCV for face detection and the `face_recognition` library (built on dlib) for facial encoding and matching. The system eliminates the need for manual roll calls and proxy attendance, saving time and improving accuracy. The system achieves approximately 85–92% recognition accuracy under standard classroom lighting conditions. Built with Python, OpenCV, and face_recognition, this project demonstrates a practical application of computer vision for educational administration.
 
