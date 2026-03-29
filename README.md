@@ -8,23 +8,23 @@
 
 ---
 
-## 👤 Author(s)
+👤 Profile
 
 ```
-Author(s): [Your Name]
-Affiliation: [Your University / Organization]
-Date: [Month Year]
+Author(s): [khushi Bonde]
+Affiliation: [Suryodaya College Of Engineering And Technology]
+
 ```
 
 ---
 
-## 📄 Abstract
+ 📄 Abstract
 
 This project presents an AI-powered Student Attendance Detection System using CCTV (CCT) camera feeds and facial recognition technology. The system captures live video from a classroom camera, detects and recognizes student faces in real time, and automatically marks their attendance in a CSV/Excel file with timestamp. It leverages OpenCV for face detection and the `face_recognition` library (built on dlib) for facial encoding and matching. The system eliminates the need for manual roll calls and proxy attendance, saving time and improving accuracy. The system achieves approximately 85–92% recognition accuracy under standard classroom lighting conditions. Built with Python, OpenCV, and face_recognition, this project demonstrates a practical application of computer vision for educational administration.
 
 ---
 
-## 1. 📖 Introduction
+ 1.  Introduction
 
 Attendance management is a critical administrative task in educational institutions. Traditional methods — manual roll calls or sign-in sheets — are time-consuming, prone to proxy attendance, and create additional workload for teachers. With a typical class of 60 students, taking attendance can consume 5–10 minutes of valuable teaching time per session.
 
@@ -37,8 +37,7 @@ AI-powered facial recognition offers an automated, contactless, and tamper-proof
 - Generate daily/weekly attendance reports
 
 ---
-
-## 2. 📚 Literature Review
+ 2.  Literature Review
 
 - **Adjabi et al. (2020)** surveyed face recognition methods, highlighting that deep learning-based approaches (FaceNet, ArcFace) achieve >99% accuracy on benchmark datasets.
 - **Shervin Emami (2012)** demonstrated real-time face recognition using OpenCV's Eigenfaces and LBPH (Local Binary Pattern Histogram) algorithms.
@@ -50,13 +49,13 @@ The `face_recognition` library used in this project is based on ResNet-34 deep m
 
 ---
 
-## 3. ⚙️ Methodology
+ 3.  Methodology
 
 The system works in two phases. In the **Registration Phase**, clear front-facing photos of each student are stored in a database folder named after the student. The system generates a 128-dimensional face encoding for each photo using deep metric learning. In the **Recognition Phase**, the live camera feed is processed frame by frame. Each frame undergoes face detection using HOG (Histogram of Oriented Gradients). Detected faces are encoded and compared against all stored encodings using Euclidean distance. If the distance is below a threshold (0.6), the face is recognized and attendance is marked in a CSV file with timestamp. Each student is marked present only once per session to avoid duplicate entries.
 
 ---
 
-## 4. 💻 Implementation
+ 4.  Implementation
 
 **Programming Language:** Python 3.8+
 
@@ -110,7 +109,7 @@ python src/main.py
 
 ---
 
-## 5. 📊 Results and Discussion
+ 5.  Results and Discussion
 
 | Metric | Value |
 |--------|-------|
@@ -136,7 +135,7 @@ Amit_Kumar,    2025-03-10, 09:03:10, Present
 
 ---
 
-## 6. ⚠️ Limitations
+6.  Limitations
 
 - **Lighting dependency** — accuracy drops significantly under poor lighting or with backlight.
 - **Mask/occlusion** — students wearing masks or covering faces will not be recognized.
@@ -148,7 +147,7 @@ Amit_Kumar,    2025-03-10, 09:03:10, Present
 
 ---
 
-## 7. 🚀 Future Scope
+ 7.  Future Scope
 
 - Add **anti-spoofing detection** (liveness detection) to prevent photo-based attacks
 - Integrate **mask-aware face recognition** for post-pandemic environments
@@ -160,13 +159,13 @@ Amit_Kumar,    2025-03-10, 09:03:10, Present
 
 ---
 
-## 8. ✅ Conclusion
+ 8. Conclusion
 
 This project successfully demonstrates an AI-powered Student Attendance Detection System using face recognition. The system achieves ~89% recognition accuracy under standard conditions and automates the entire attendance workflow — from face detection to CSV report generation. It effectively eliminates proxy attendance and reduces administrative burden on teachers. While limitations exist around lighting, occlusion, and anti-spoofing, the system provides a cost-effective and scalable solution for modern educational institutions. This project gives beginner AI/ML students hands-on experience with computer vision, face recognition, and real-time video processing.
 
 ---
 
-## 9. 📎 References
+9.  References
 
 ```
 [1] I. Adjabi et al., "Past, Present, and Future of Face Recognition: A Review," 
