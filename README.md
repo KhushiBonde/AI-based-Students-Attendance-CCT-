@@ -1,12 +1,3 @@
-# 🎓 AI Based CCT Student Attendance Detection System
-
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![OpenCV](https://img.shields.io/badge/CV-OpenCV-red.svg)
-![FaceRecognition](https://img.shields.io/badge/AI-Face_Recognition-purple.svg)
-![Level](https://img.shields.io/badge/Level-Beginner-green.svg)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
-
----
 
 Profile
 
