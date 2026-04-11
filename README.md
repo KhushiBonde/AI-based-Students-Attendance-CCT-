@@ -15,6 +15,7 @@ The proposed study involves designing an intelligent system for capturing attend
 ---
 
  1.  Introduction
+
 Attendance control is an important administrative process in educational establishments. Traditional attendance processes – manual attendance or the use of sign-in registers – are cumbersome, susceptible to cheating, and place extra work on the shoulders of teachers. Taking attendance for a group of 60 students may take between 5 and 10 minutes in each lesson.
 
 However, facial recognition technology based on artificial intelligence presents an easier solution to the problem. It does not require extra equipment because CCTV cameras are already present in classrooms.
