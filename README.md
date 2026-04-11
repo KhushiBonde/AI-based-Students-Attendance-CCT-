@@ -47,83 +47,29 @@ The algorithm consists of two stages. During the Registration stage, images of t
 
  4.  Implementation
 
-**Programming Language:** Python 3.8+
 
-**Frameworks / Libraries:**
-| Library | Purpose |
-|---------|---------|
-| `opencv-python` | Live video capture and display |
-| `face_recognition` | Face encoding and matching (dlib-based) |
-| `numpy` | Array operations |
-| `pandas` | Attendance CSV management |
-| `openpyxl` | Excel report generation |
-| `dlib` | Underlying facial landmark detection |
-| `cmake` | Required for dlib compilation |
+1. System Setup & Data Preparation:
+   Collect and store student images in a database, and configure required libraries for face detection and recognition.
 
-**Tools Used:**
-- VS Code / Jupyter Notebook
-- Webcam or IP Camera / CCTV
-- Git & GitHub
+2. Model Processing & Recognition:
+   Capture live video, detect faces, encode them, and match with stored data to identify students.
 
-**Project Structure:**
-```
-3_student_attendance/
-├── src/
-│   ├── main.py                  # Live recognition entry point
-│   ├── register_student.py      # Student photo registration
-│   ├── face_recognizer.py       # Recognition logic
-│   ├── attendance_marker.py     # CSV/Excel writing
-│   └── utils.py                 # Helper functions
-├── dataset/
-│   ├── student_images/          # Student photo database
-│   │   ├── Rahul_Sharma.jpg
-│   │   └── Priya_Patil.jpg
-│   └── attendance.csv           # Output attendance log
-├── notebook/
-│   └── attendance_demo.ipynb
-├── output/
-│   └── demo_screenshot.png
-├── README.md
-└── requirements.txt
-```
+3. Attendance Recording:
+   Automatically mark recognized students in a CSV/Excel file with timestamps, ensuring efficient and accurate attendance tracking.
 
-**Run the project:**
-```bash
-git clone https://github.com/YOUR_USERNAME/student-attendance-ai.git
-cd student-attendance-ai
-pip install -r requirements.txt
-# Step 1: Add student photos to dataset/student_images/
-# Step 2: Run attendance
-python src/main.py
-```
-
----
 
  5.  Results and Discussion
 
-| Metric | Value |
-|--------|-------|
-| Face Recognition Accuracy | 88.7% |
-| False Acceptance Rate (FAR) | 3.2% |
-| False Rejection Rate (FRR) | 8.1% |
-| Processing Speed | ~15–20 FPS (webcam) |
-| Max Students Supported | 100 (real-time) |
 
-- Recognition accuracy improves to ~93% with high-quality registration photos
-- Performance drops in low-light conditions (below 100 lux)
-- Attendance marking latency: < 0.5 seconds per recognized face
-- Successfully tested with a simulated class of 30 students
-- Duplicate attendance prevention works correctly per session
+1. Performance Evaluation:
+   The system is evaluated using metrics like accuracy, False Acceptance Rate (FAR), False Rejection Rate (FRR), and processing speed to ensure reliable real-time face recognition.
 
-**Sample Attendance CSV Output:**
-```
-Name,          Date,       Time,     Status
-Rahul_Sharma,  2025-03-10, 09:02:15, Present
-Priya_Patil,   2025-03-10, 09:02:48, Present
-Amit_Kumar,    2025-03-10, 09:03:10, Present
-```
+2. System Behavior Analysis:
+   Performance varies based on factors such as image quality and lighting conditions, with improved accuracy using high-quality inputs and slight degradation in low-light environments.
 
----
+3. Attendance Output:
+   Recognized faces are recorded with timestamps in a structured format, ensuring fast, duplicate-free, and efficient attendance management.
+
 
 6.  Limitations
 - Poor lighting: recognition will fail when lighting is poor or backlighting is used.
