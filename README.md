@@ -8,8 +8,8 @@ Affiliation: [Suryodaya College Of Engineering And Technology]
 ```
 
 ---
-
-  Abstract
+ Abstract
+---
 The proposed study involves designing an intelligent system for capturing attendance records of students by applying artificial intelligence on video captured through a CCTV camera. This study includes capturing videos from the classroom, identifying faces of the students within the video, recognizing their faces, and recording attendance records in an Excel file along with timestamps. The designed application has been implemented using Python, OpenCV, and face_recognition libraries.
 
 ---
